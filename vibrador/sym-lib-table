@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name VIbrador-rescue)(type Legacy)(uri ${KIPRJMOD}/VIbrador-rescue.lib)(options "")(descr ""))
-)
