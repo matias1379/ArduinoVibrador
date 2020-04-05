@@ -77,7 +77,7 @@ VIN
 Text GLabel 4950 2900 3    50   Input ~ 0
 GND
 Text GLabel 3700 2400 2    50   Input ~ 0
-TX
+RX
 $Comp
 L VIbrador-rescue:ArduinoNANO-Modulos-VIbrador-rescue U2
 U 1 1 5E6EAAF3
@@ -94,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 2400 3700 2400
 Text GLabel 3700 2500 2    50   Input ~ 0
-RX
+TX
 Text GLabel 3700 2600 2    50   Input ~ 0
 D9
 Wire Wire Line
