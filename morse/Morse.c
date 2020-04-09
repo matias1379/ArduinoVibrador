@@ -5,100 +5,78 @@
 #include "Arduino.h"
 #include "Morse.h"
  
-
-
-main(){
-   void punto()
-{
+void punto(){
   tone(9, 440);
   delay(250);
   noTone(9);
   delay(250);  
 }
  
-void raya()
-{
+void raya(){
   tone(9, 440);
   delay(1000);
   noTone(9);
   delay(250); 
 }
 
-void blanco()
-{
+void blanco(){
   punto(); punto(); punto(); punto();
 }
 
-void rojo()
-{
+void rojo(){
   punto(); punto(); punto();raya();
 }
 
-void marron()
-{
+void marron(){
   punto(); punto(); raya(); punto();
 }
 
-void naranja()
-{
+void naranja(){
   punto(); punto(); raya();raya();
 }
-void amarillo()
-{
+void amarillo(){
   punto(); raya(); punto(); punto();
 }
 
-void dorado()
-{
+void dorado(){
   punto(); raya(); punto();raya();
 }
 
-void beige()
-{
+void beige(){
   punto(); raya(); raya(); punto();
 }
 
-void violeta()
-{
+void violeta(){
   punto(); raya(); raya();raya();
 }
 
-void rosa()
-{
+void rosa(){
   raya(); punto(); punto(); punto();
 }
 
-void purpura()
-{
+void purpura(){
   raya(); punto(); punto();raya();
 }
 
-void verde()
-{
+void verde(){
   raya(); punto(); raya(); punto();
 }
 
-void azul()
-{
+void azul(){
   raya(); punto(); raya();raya();
 }
-void cyan()
-{
+void cyan(){
   raya(); raya(); punto(); punto();
 }
 
-void plata()
-{
+void plata(){
   raya(); raya(); punto();raya();
 }
 
-void gris()
-{
+void gris(){
   raya(); raya(); raya(); punto();
 }
 
-void negro()
-{
+void negro(){
   raya(); raya(); raya();raya();
-}
 }
