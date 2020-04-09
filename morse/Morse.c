@@ -1,16 +1,14 @@
 /*
-  Morse.cpp -  
+  Morse.c -  
 */
  
 #include "Arduino.h"
 #include "Morse.h"
  
-Morse::Morse()
-{
-  const int buzzer=9;
-}
- 
-void Morse::punto()
+
+
+main(){
+   void punto()
 {
   tone(9, 440);
   delay(250);
@@ -18,7 +16,7 @@ void Morse::punto()
   delay(250);  
 }
  
-void Morse::raya()
+void raya()
 {
   tone(9, 440);
   delay(1000);
@@ -26,80 +24,81 @@ void Morse::raya()
   delay(250); 
 }
 
-void Morse::blanco()
+void blanco()
 {
   punto(); punto(); punto(); punto();
 }
 
-void Morse::rojo()
+void rojo()
 {
   punto(); punto(); punto();raya();
 }
 
-void Morse::marron()
+void marron()
 {
   punto(); punto(); raya(); punto();
 }
 
-void Morse::naranja()
+void naranja()
 {
   punto(); punto(); raya();raya();
 }
-void Morse::amarillo()
+void amarillo()
 {
   punto(); raya(); punto(); punto();
 }
 
-void Morse::dorado()
+void dorado()
 {
   punto(); raya(); punto();raya();
 }
 
-void Morse::beige()
+void beige()
 {
   punto(); raya(); raya(); punto();
 }
 
-void Morse::violeta()
+void violeta()
 {
   punto(); raya(); raya();raya();
 }
 
-void Morse::rosa()
+void rosa()
 {
   raya(); punto(); punto(); punto();
 }
 
-void Morse::purpura()
+void purpura()
 {
   raya(); punto(); punto();raya();
 }
 
-void Morse::verde()
+void verde()
 {
   raya(); punto(); raya(); punto();
 }
 
-void Morse::azul()
+void azul()
 {
   raya(); punto(); raya();raya();
 }
-void Morse::cyan()
+void cyan()
 {
   raya(); raya(); punto(); punto();
 }
 
-void Morse::plata()
+void plata()
 {
   raya(); raya(); punto();raya();
 }
 
-void Morse::gris()
+void gris()
 {
   raya(); raya(); raya(); punto();
 }
 
-void Morse::negro()
+void negro()
 {
   raya(); raya(); raya();raya();
+}
 }
