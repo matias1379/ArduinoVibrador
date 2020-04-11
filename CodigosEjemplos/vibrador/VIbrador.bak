@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Sistema de vibracion "
 Date "2020-03-15"
-Rev ""
+Rev "PIERRI, Matias"
 Comp "Ojo de Van Gogh"
 Comment1 ""
 Comment2 ""
@@ -17,12 +17,12 @@ $EndDescr
 $Comp
 L VIbrador-rescue:HC-05-Modulos-VIbrador-rescue U4
 U 1 1 5E6EC1C3
-P 5000 2200
-F 0 "U4" V 5074 2338 50  0000 L CNN
-F 1 "HC-05" V 5165 2338 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5000 2200 50  0001 C CNN
-F 3 "" H 5000 2200 50  0001 C CNN
-	1    5000 2200
+P 4750 1600
+F 0 "U4" V 4824 1738 50  0000 L CNN
+F 1 "HC-05" V 4915 1738 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4750 1600 50  0001 C CNN
+F 3 "" H 4750 1600 50  0001 C CNN
+	1    4750 1600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -56,35 +56,35 @@ Wire Wire Line
 	2350 3700 2350 3750
 Text GLabel 2000 3600 0    50   Input ~ 0
 GND
-Text GLabel 4750 2900 3    50   Input ~ 0
+Text GLabel 4500 2300 3    50   Input ~ 0
 TX
-Text GLabel 4850 2900 3    50   Input ~ 0
+Text GLabel 4600 2300 3    50   Input ~ 0
 RX
-Text GLabel 4600 4050 3    50   Input ~ 0
+Text GLabel 4350 3450 3    50   Input ~ 0
 D9
 Wire Wire Line
-	4700 3950 4600 3950
+	4450 3350 4350 3350
 Wire Wire Line
-	4600 3950 4600 4050
-Text GLabel 4600 3650 1    50   Input ~ 0
+	4350 3350 4350 3450
+Text GLabel 4350 3050 1    50   Input ~ 0
 GND
 Wire Wire Line
-	4600 3750 4600 3650
+	4350 3150 4350 3050
 Wire Wire Line
-	4600 3750 4700 3750
-Text GLabel 5050 2900 3    50   Input ~ 0
+	4350 3150 4450 3150
+Text GLabel 4800 2300 3    50   Input ~ 0
 VIN
-Text GLabel 4950 2900 3    50   Input ~ 0
+Text GLabel 4700 2300 3    50   Input ~ 0
 GND
 Text GLabel 3700 2400 2    50   Input ~ 0
-TX
+RX
 $Comp
 L VIbrador-rescue:ArduinoNANO-Modulos-VIbrador-rescue U2
 U 1 1 5E6EAAF3
 P 3100 2700
 F 0 "U2" V 2475 2375 50  0000 C CNN
 F 1 "ArduinoNANO" V 2566 2375 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3100 2700 50  0001 C CNN
+F 2 "Module:Arduino_Nano" H 3100 2700 50  0001 C CNN
 F 3 "" H 3100 2700 50  0001 C CNN
 	1    3100 2700
 	0    1    1    0   
@@ -94,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 2400 3700 2400
 Text GLabel 3700 2500 2    50   Input ~ 0
-RX
+TX
 Text GLabel 3700 2600 2    50   Input ~ 0
 D9
 Wire Wire Line
@@ -134,77 +134,88 @@ Wire Wire Line
 Wire Wire Line
 	2100 3600 2000 3600
 Wire Wire Line
-	4750 2550 4750 2650
+	4500 1950 4500 2050
 Wire Wire Line
-	4750 2650 4800 2650
+	4500 2050 4550 2050
 Wire Wire Line
-	4800 2650 4800 2800
+	4550 2050 4550 2200
 Wire Wire Line
-	4800 2800 4750 2800
+	4550 2200 4500 2200
 Wire Wire Line
-	4750 2800 4750 2900
+	4500 2200 4500 2300
 Wire Wire Line
-	4850 2900 4850 2800
+	4600 2300 4600 2200
 Wire Wire Line
-	4850 2800 4900 2800
+	4600 2200 4650 2200
 Wire Wire Line
-	4900 2800 4900 2650
+	4650 2200 4650 2050
 Wire Wire Line
-	4900 2650 4850 2650
+	4650 2050 4600 2050
 Wire Wire Line
-	4850 2650 4850 2550
+	4600 2050 4600 1950
 Wire Wire Line
-	4950 2550 4950 2650
+	4700 1950 4700 2050
 Wire Wire Line
-	4950 2650 5000 2650
+	4700 2050 4750 2050
 Wire Wire Line
-	5000 2650 5000 2850
+	4750 2050 4750 2250
 Wire Wire Line
-	5000 2850 4950 2850
+	4750 2250 4700 2250
 Wire Wire Line
-	4950 2850 4950 2900
+	4700 2250 4700 2300
 Wire Wire Line
-	5050 2550 5050 2650
+	4800 1950 4800 2050
 Wire Wire Line
-	5050 2650 5100 2650
+	4800 2050 4850 2050
 Wire Wire Line
-	5100 2650 5100 2850
+	4850 2050 4850 2250
 Wire Wire Line
-	5100 2850 5050 2850
+	4850 2250 4800 2250
 Wire Wire Line
-	5050 2850 5050 2900
+	4800 2250 4800 2300
 $Comp
 L VIbrador-rescue:Buzzer-Modulos-VIbrador-rescue U3
 U 1 1 5E6F1D29
-P 4950 3900
-F 0 "U3" H 5000 3750 50  0000 C CNN
-F 1 "Buzzer" H 5000 3850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 3900 50  0001 C CNN
-F 3 "" H 4950 3900 50  0001 C CNN
-	1    4950 3900
+P 4700 3300
+F 0 "U3" H 4750 3150 50  0000 C CNN
+F 1 "Buzzer" H 4750 3250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4700 3300 50  0001 C CNN
+F 3 "" H 4700 3300 50  0001 C CNN
+	1    4700 3300
 	-1   0    0    1   
 $EndComp
-Text GLabel 5450 4100 3    50   Input ~ 0
+Text GLabel 5200 3500 3    50   Input ~ 0
 D9
 Wire Wire Line
-	5550 4000 5450 4000
+	5300 3400 5200 3400
 Wire Wire Line
-	5450 4000 5450 4100
-Text GLabel 5450 3700 1    50   Input ~ 0
+	5200 3400 5200 3500
+Text GLabel 5200 3100 1    50   Input ~ 0
 GND
 Wire Wire Line
-	5450 3800 5450 3700
+	5200 3200 5200 3100
 Wire Wire Line
-	5450 3800 5550 3800
+	5200 3200 5300 3200
 $Comp
 L VIbrador-rescue:Buzzer-Modulos-VIbrador-rescue U5
 U 1 1 5E8A4DBD
-P 5800 3950
-F 0 "U5" H 5850 3800 50  0000 C CNN
-F 1 "Buzzer" H 5850 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5800 3950 50  0001 C CNN
-F 3 "" H 5800 3950 50  0001 C CNN
-	1    5800 3950
+P 5550 3350
+F 0 "U5" H 5600 3200 50  0000 C CNN
+F 1 "Buzzer" H 5600 3300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 3350 50  0001 C CNN
+F 3 "" H 5550 3350 50  0001 C CNN
+	1    5550 3350
 	-1   0    0    1   
+$EndComp
+$Comp
+L VIbrador-rescue:PiZeroW U?
+U 1 1 5E9167F3
+P 2800 4300
+F 0 "U?" H 2650 4475 50  0000 C CNN
+F 1 "PiZeroW" H 2650 4384 50  0000 C CNN
+F 2 "" H 2800 4300 50  0001 C CNN
+F 3 "" H 2800 4300 50  0001 C CNN
+	1    2800 4300
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
