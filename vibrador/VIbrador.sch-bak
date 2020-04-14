@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:VIbrador-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
@@ -37,10 +38,6 @@ F 3 "" H 4750 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 2350 4350 2350
-Text GLabel 2750 1350 2    50   Input ~ 0
-VIN
-Text GLabel 2950 3800 0    50   Input ~ 0
-GND
 Text GLabel 4500 4800 3    50   Input ~ 0
 TX
 Text GLabel 4600 4800 3    50   Input ~ 0
@@ -51,22 +48,22 @@ Wire Wire Line
 	4450 5850 4350 5850
 Wire Wire Line
 	4350 5850 4350 5950
-Text GLabel 4350 5550 1    50   Input ~ 0
-GND
+Text GLabel 4350 5550 1    50   Input Italic 0
+OUT-
 Wire Wire Line
 	4350 5650 4350 5550
 Wire Wire Line
 	4350 5650 4450 5650
 Text GLabel 4800 4800 3    50   Input ~ 0
-VIN
+OUT+
 Text GLabel 4700 4800 3    50   Input ~ 0
-GND
+OUT-
 Text GLabel 2000 3050 0    50   Input ~ 0
-RX
+TX
 Wire Wire Line
 	2100 3050 2000 3050
 Text GLabel 2000 2950 0    50   Input ~ 0
-TX
+RX
 Text GLabel 2000 2850 0    50   Input ~ 0
 D9
 Wire Wire Line
@@ -143,7 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 5900 5200 6000
 Text GLabel 5200 5600 1    50   Input ~ 0
-GND
+OUT-
 Wire Wire Line
 	5200 5700 5200 5600
 Wire Wire Line
@@ -270,4 +267,60 @@ Wire Wire Line
 	5650 3150 5650 3050
 Wire Wire Line
 	5650 3050 5800 3050
+Text GLabel 2350 2100 0    50   Input ~ 0
+Tx_rasp
+Text GLabel 2350 2200 0    50   Input ~ 0
+Rx_rasp
+Text GLabel 3850 4650 2    50   Input ~ 0
+Tx_rasp
+Text GLabel 3850 4750 2    50   Input ~ 0
+Rx_rasp
+Wire Wire Line
+	3850 4650 3750 4650
+Wire Wire Line
+	3750 4650 3750 4600
+Wire Wire Line
+	3750 4600 3400 4600
+Wire Wire Line
+	3400 4600 3400 4650
+Wire Wire Line
+	3400 4650 3200 4650
+Wire Wire Line
+	3850 4750 3750 4750
+Wire Wire Line
+	3750 4750 3750 4700
+Wire Wire Line
+	3750 4700 3400 4700
+Wire Wire Line
+	3400 4700 3400 4750
+Wire Wire Line
+	3400 4750 3200 4750
+Text GLabel 3700 4350 2    50   Input ~ 0
+OUT+
+Wire Wire Line
+	3600 4350 3600 4300
+Wire Wire Line
+	3600 4300 3400 4300
+Wire Wire Line
+	3400 4300 3400 4350
+Wire Wire Line
+	3400 4350 3200 4350
+Text GLabel 3750 5250 2    50   Input ~ 0
+OUT-
+Wire Wire Line
+	3600 5250 3600 5300
+Wire Wire Line
+	3600 5300 3400 5300
+Wire Wire Line
+	3400 5300 3400 5250
+Wire Wire Line
+	3400 5250 3200 5250
+Wire Wire Line
+	3700 4350 3600 4350
+Wire Wire Line
+	3600 5250 3750 5250
+Text GLabel 2950 3800 2    50   Input ~ 0
+OUT-
+Text GLabel 2750 1350 2    50   Input ~ 0
+OUT+
 $EndSCHEMATC
