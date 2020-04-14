@@ -270,7 +270,7 @@ Wire Wire Line
 Text GLabel 2350 2100 0    50   Input ~ 0
 Tx_rasp
 Text GLabel 2350 2200 0    50   Input ~ 0
-Rx_Rasp
+Rx_rasp
 Text GLabel 3850 4650 2    50   Input ~ 0
 Tx_rasp
 Text GLabel 3850 4750 2    50   Input ~ 0

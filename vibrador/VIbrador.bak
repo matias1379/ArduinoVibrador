@@ -48,8 +48,8 @@ Wire Wire Line
 	4450 5850 4350 5850
 Wire Wire Line
 	4350 5850 4350 5950
-Text GLabel 4350 5550 1    50   Input ~ 0
-GND
+Text GLabel 4350 5550 1    50   Input Italic 0
+OUT-
 Wire Wire Line
 	4350 5650 4350 5550
 Wire Wire Line
@@ -140,7 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 5900 5200 6000
 Text GLabel 5200 5600 1    50   Input ~ 0
-GND
+OUT-
 Wire Wire Line
 	5200 5700 5200 5600
 Wire Wire Line
