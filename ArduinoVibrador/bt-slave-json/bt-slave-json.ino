@@ -1,6 +1,7 @@
 #include <ArduinoJson.hpp>        //incluyo librerias de Json
 #include <ArduinoJson.h>
 #include <SoftwareSerial.h>       //incluyo libreria para cambiar pines de serial
+#include "Morse.h"                //incluyo libreria para la vibracion 
 SoftwareSerial BTSlave (10, 11);  //pin RX=10, pin TX=11
 
 String str = "";                  //variable que hace el string del json
@@ -35,33 +36,87 @@ void loop() {
      else{
       str.concat('}');//agrego la llave 
       String color = DeserializarJson(str); //deserializo str y guardo en color
-                 
-      //Si es rojo hago tal ruido
-       if(color=="rojo"){
-        tone(buzzer,440);
-        delay(1000);
-        noTone(buzzer);
-        delay(100);
-        Serial.println("Está sonando el color: rojo");
-       
+      
+       //Se ejecuta la funcion de acuerdo al color
+       if(color=="blanco"){
+        blanco();
+        Serial.println("Está sonando el color: blanco");
       }
-      //Si es verde hago tal ruido
-      if(color=="verde"){
-        tone(buzzer,880);
-        delay(1000);
-        noTone(buzzer);
-        delay(1000);
+                 
+       else if(color=="rojo"){
+        rojo();
+        Serial.println("Está sonando el color: rojo");
+      }
+
+       else if(color=="marron"){
+        marron();
+        Serial.println("Está sonando el color: marron");
+      }
+                 
+       else if(color=="naranja"){
+        naranja();
+        Serial.println("Está sonando el color: naranja");
+      }
+
+      else if(color=="amarillo"){
+        amarillo();
+        Serial.println("Está sonando el color: amarillo");
+      }
+                 
+       else if(color=="dorado"){
+        dorado();
+        Serial.println("Está sonando el color: dorado");
+      }
+
+       else if(color=="beige"){
+        beige();
+        Serial.println("Está sonando el color: beige");
+      }
+                 
+       else if(color=="violeta"){
+        violeta();
+        Serial.println("Está sonando el color: violeta");
+      }
+      
+      else if(color=="rosa"){
+        rosa();
+        Serial.println("Está sonando el color: rosa");
+      }
+                 
+       else if(color=="purpura"){
+        purpura();
+        Serial.println("Está sonando el color: purpura");
+      }
+
+       else if(color=="verde"){
+        verde();
         Serial.println("Está sonando el color: verde");
-        
-       }
-      //Si es azul hago tal ruido
-       if(color=="azul"){
-        tone(buzzer,2000);
-        delay(1000);
-        noTone(buzzer);
-        delay(2000);
+      }
+                 
+       else if(color=="azul"){
+        azul();
         Serial.println("Está sonando el color: azul");
-       }   
+      }
+
+      else if(color=="cyan"){
+        cyan();
+        Serial.println("Está sonando el color: cyan");
+      }
+                 
+       else if(color=="plata"){
+        plata();
+        Serial.println("Está sonando el color: plata");
+      }
+
+       else if(color=="gris"){
+        gris();
+        Serial.println("Está sonando el color: gris");
+      }
+                 
+       else if(color=="negro"){
+        negro();
+        Serial.println("Está sonando el color: negro");
+      }
      }
   }
 }
