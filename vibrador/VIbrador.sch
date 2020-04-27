@@ -57,24 +57,12 @@ Text GLabel 4800 4800 3    50   Input ~ 0
 OUT+
 Text GLabel 4700 4800 3    50   Input ~ 0
 OUT-
-Text GLabel 2000 3050 0    50   Input ~ 0
+Text GLabel 3950 5000 2    50   Input ~ 0
 TX
-Wire Wire Line
-	2100 3050 2000 3050
-Text GLabel 2000 2950 0    50   Input ~ 0
+Text GLabel 3950 5100 2    50   Input ~ 0
 RX
 Text GLabel 2000 2850 0    50   Input ~ 0
 D9
-Wire Wire Line
-	2100 3050 2100 3000
-Wire Wire Line
-	2100 3000 2350 3000
-Wire Wire Line
-	2350 2900 2100 2900
-Wire Wire Line
-	2100 2900 2100 2950
-Wire Wire Line
-	2100 2950 2000 2950
 Wire Wire Line
 	2000 2850 2100 2850
 Wire Wire Line
@@ -332,4 +320,16 @@ Wire Wire Line
 	6700 3500 6700 3350
 Wire Wire Line
 	6700 3350 6750 3350
+Wire Wire Line
+	3400 5000 3400 5050
+Wire Wire Line
+	3400 5050 3200 5050
+Wire Wire Line
+	3400 5000 3950 5000
+Wire Wire Line
+	3400 5100 3400 5150
+Wire Wire Line
+	3400 5150 3200 5150
+Wire Wire Line
+	3400 5100 3950 5100
 $EndSCHEMATC

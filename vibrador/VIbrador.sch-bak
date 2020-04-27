@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:VIbrador-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
@@ -323,4 +322,14 @@ Text GLabel 2950 3800 2    50   Input ~ 0
 OUT-
 Text GLabel 2750 1350 2    50   Input ~ 0
 OUT+
+Text GLabel 6750 3350 2    50   Input ~ 0
+OUT-
+Text GLabel 6800 3500 2    50   Input ~ 0
+IN-
+Wire Wire Line
+	6800 3500 6700 3500
+Wire Wire Line
+	6700 3500 6700 3350
+Wire Wire Line
+	6700 3350 6750 3350
 $EndSCHEMATC
