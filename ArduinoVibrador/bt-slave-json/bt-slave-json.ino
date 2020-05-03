@@ -5,7 +5,6 @@
 SoftwareSerial BTSlave (10, 11);  //pin RX=10, pin TX=11
 
 String str = "";                  //variable que hace el string del json
-const int buzzer=8;               //pin del vibrador o buzzer
 
 // Funcion de deserializar Json
 String DeserializarJson(String json)  //Devuelve un string y pide el string json
@@ -15,7 +14,7 @@ String DeserializarJson(String json)  //Devuelve un string y pide el string json
     if (error) { return; }                                    // si hay error devolver nada
  
     String color = doc["colour"]; //busco el documento "colour" y guardo lo que contiene 
-    Serial.println(color);        //se imprime el contenido de colour, osea rojo
+                //se imprime el contenido de colour, osea rojo
     return color;
 }
 
@@ -28,95 +27,100 @@ void setup() {
 
 void loop() {
   
-  while(BTSlave.available()>0){ //mientra llega informacion por BT 
+   while(BTSlave.available()>0){ //mientra llega informacion por BT 
    char caracter=BTSlave.read();    //leo y guardo en caracer
+   
      if (caracter != '}'){    //si caracter es distinto a la llave
       str.concat(caracter); //guardo en str cada caracter y formo string
      }
+     
      else{
       str.concat('}');//agrego la llave 
       String color = DeserializarJson(str); //deserializo str y guardo en color
-      
+      Serial.println(str);
+      str = "";
+   
        //Se ejecuta la funcion de acuerdo al color
-       if(color=="blanco"){
+        if(color=="blanco"){
         blanco();
         Serial.println("Está sonando el color: blanco");
-      }
+        }
                  
-       else if(color=="rojo"){
+        else if(color=="rojo"){
         rojo();
         Serial.println("Está sonando el color: rojo");
-      }
+        }
 
-       else if(color=="marron"){
+        else if(color=="marron"){
         marron();
         Serial.println("Está sonando el color: marron");
-      }
+        }
                  
-       else if(color=="naranja"){
+        else if(color=="naranja"){
         naranja();
         Serial.println("Está sonando el color: naranja");
-      }
+        }
 
-      else if(color=="amarillo"){
+        else if(color=="amarillo"){
         amarillo();
         Serial.println("Está sonando el color: amarillo");
-      }
+        }
                  
-       else if(color=="dorado"){
+        else if(color=="dorado"){
         dorado();
         Serial.println("Está sonando el color: dorado");
-      }
+        }
 
-       else if(color=="beige"){
+        else if(color=="beige"){
         beige();
         Serial.println("Está sonando el color: beige");
-      }
+        }
                  
-       else if(color=="violeta"){
+        else if(color=="violeta"){
         violeta();
         Serial.println("Está sonando el color: violeta");
-      }
+        }
       
-      else if(color=="rosa"){
+        else if(color=="rosa"){
         rosa();
         Serial.println("Está sonando el color: rosa");
-      }
+        }
                  
-       else if(color=="purpura"){
+        else if(color=="purpura"){
         purpura();
         Serial.println("Está sonando el color: purpura");
-      }
+        }
 
-       else if(color=="verde"){
+        else if(color=="verde"){
         verde();
         Serial.println("Está sonando el color: verde");
-      }
+        }
                  
-       else if(color=="azul"){
+        else if(color=="azul"){
         azul();
         Serial.println("Está sonando el color: azul");
-      }
+        }
 
-      else if(color=="cyan"){
+        else if(color=="cyan"){
         cyan();
         Serial.println("Está sonando el color: cyan");
-      }
+        }
                  
        else if(color=="plata"){
         plata();
         Serial.println("Está sonando el color: plata");
-      }
+        }
 
        else if(color=="gris"){
         gris();
         Serial.println("Está sonando el color: gris");
-      }
+        }
                  
        else if(color=="negro"){
         negro();
         Serial.println("Está sonando el color: negro");
-      }
+        }
+       Serial.println("***************");
      }
-  }
+  }  
 }
